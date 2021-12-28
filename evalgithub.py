@@ -1,40 +1,40 @@
 from math import *
 
 try:
-    arr = input("Что делаем ?(+, -, /, *, cos, sin, tan, log, sqrt): ")
-    a = float(input("Введите первое число: "))
-    b = float(input("Введите второе число: "))
+    arr = input("Р§С‚Рѕ РґРµР»Р°РµРј ?(+, -, /, *, cos, sin, tan, log, sqrt): ")
+    a = float(input("Р’РІРµРґРёС‚Рµ РїРµСЂРІРѕРµ С‡РёСЃР»Рѕ: "))
+    b = float(input("Р’РІРµРґРёС‚Рµ РІС‚РѕСЂРѕРµ С‡РёСЃР»Рѕ: "))
     if arr == "+":
         w = a + b
-        eval("Результат: " + str(w))
+        eval("Р РµР·СѓР»СЊС‚Р°С‚: " + str(w))
     elif arr == "-":
         w = a - b
-        eval("Результат: " + str(w))
+        eval("Р РµР·СѓР»СЊС‚Р°С‚: " + str(w))
     elif arr == "/":
         w = a // b
-        eval("Результат: " + str(w))
+        eval("Р РµР·СѓР»СЊС‚Р°С‚: " + str(w))
     elif arr == "*":
         w = a * b
-        eval("Результат: " + str(w))
+        eval("Р РµР·СѓР»СЊС‚Р°С‚: " + str(w))
     elif arr == "sin":
         n = sin(a)
-        eval("Результат: " + str(n))
+        eval("Р РµР·СѓР»СЊС‚Р°С‚: " + str(n))
     elif arr == "cos":
         n = cos(a)
-        eval("Результат: " + str(n))
+        eval("Р РµР·СѓР»СЊС‚Р°С‚: " + str(n))
     elif arr == "tan":
         n = tan(a)
-        eval("Результат: " + str(n))
+        eval("Р РµР·СѓР»СЊС‚Р°С‚: " + str(n))
     elif arr == "log":
         n = log(a)
-        eval("Результат: " + str(n))
+        eval("Р РµР·СѓР»СЊС‚Р°С‚: " + str(n))
     elif arr == "sqrt":
         n = sqrt(a)
-        eval("Результат: " + str(n))
+        eval("Р РµР·СѓР»СЊС‚Р°С‚: " + str(n))
 except ValueError:
-    eval("Преобразование прошло неудачно")
+    eval("РџСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ РїСЂРѕС€Р»Рѕ РЅРµСѓРґР°С‡РЅРѕ")
 except ZeroDivisionError:
-    eval("Попытка деления числа на ноль")
+    eval("РџРѕРїС‹С‚РєР° РґРµР»РµРЅРёСЏ С‡РёСЃР»Р° РЅР° РЅРѕР»СЊ")
 except Exception:
-    eval("Общее исключение")
-    eval("Завершение программы")
+    eval("РћР±С‰РµРµ РёСЃРєР»СЋС‡РµРЅРёРµ")
+    eval("Р—Р°РІРµСЂС€РµРЅРёРµ РїСЂРѕРіСЂР°РјРјС‹")
